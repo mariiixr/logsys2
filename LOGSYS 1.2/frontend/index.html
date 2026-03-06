@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogSYS</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+      <!-- Essa classe NAV é para criar o header que aparece no topo da página -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="img/logsyslogo.png" alt="LogSYS" class="logo-img" width="120" height="36"/>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+        </ul>
+    </nav>
+
+     <!-- Essa section é para criar a seção de boas-vindas -->
+
+<main class="container">
+            <div class="welcome-card">
+                <h2>Bem vindo(a) de volta, <span>Usuário</span></h2>
+                <button class="btn-logflow">Entrar no logFLOW</button>
+            </div>
+        </section>
+
+        <!-- Cards de métricas -->
+    <section class="metrics-section">
+
+        <div class="metric-card">
+            <p class="metric-label">Total de Pedidos</p>
+            <h2 class="metric-value" id="total-pedidos">0</h2>
+        </div>
+
+        <div class="metric-card">
+            <p class="metric-label">Receita Total</p>
+            <h2 class="metric-value" id="total-receita">R$ 0</h2>
+        </div>
+
+        <div class="metric-card">
+            <p class="metric-label">Clientes Ativos</p>
+            <h2 class="metric-value" id="total-clientes">0</h2>
+        </div>
+
+    </section>
+
+    <div class="bottom-section">
+        <!-- Essa section são os cards de resumo -->
+        <section class="cards-section">
+            <div class="card">
+                <h3>Pedidos recentes</h3>
+                <p>Gerencie seus pedidos de forma eficiente e rápida.</p>
+                <ul id="lista-pedidos"></ul>
+            </div>
+
+            <div class="card">
+                <h3>Entregas Pendentes</h3>
+                <p>Acompanhe as entregas que estão em andamento e garanta a satisfação dos seus clientes.</p>
+                <ul id="lista-entregas"></ul>
+            </div>
+
+            <div class="card">
+                <h3>Notificações</h3>
+                <p>Fique por dentro de todas as atualizações e alertas importantes do seu negócio.</p>
+                <ul id="lista-notificacoes"></ul>
+            </div>
+        </section>
+        </div>
+    </section>
+    
+        <section class="progress-bar">
+        <div class="glass-effect progress-widget">
+            <div class="progress-header">
+                <h1>Meta de Pedidos Diários</h1>
+                <span>15/20</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 75%;"></div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+    <section class="footer">
+        <footer class="glass-footer">
+    <div class="footer-content">
+        <div class="footer-section brand">
+            <img src="img/logsyslogo.png" alt="LogSYS" class="logo-img" width="150" height="36"/>
+            <p>Soluções inteligentes em logística para empresas que não podem parar.</p>
+            <div class="social-icons">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">GitHub</a>
+            </div>
+        </div>
+
+        <div class="footer-section links">
+            <h4>Plataforma</h4>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Rastreamento</a></li>
+                <li><a href="#">Relatórios</a></li>
+                <li><a href="#">APIs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+            <h4>Fique por dentro</h4>
+            <p>Receba novidades e dicas de logística no seu e-mail.</p>
+            <form class="news-form">
+                <input type="email" placeholder="Seu melhor e-mail">
+                <button type="submit">Assinar</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 logSYS - Todos os direitos reservados.</p>
+    </div>
+</footer>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
